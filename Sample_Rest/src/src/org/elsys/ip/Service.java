@@ -20,7 +20,7 @@ public class Service {
 	}
 	
 	// for tests purposes
-	static void setPostsService(PostService postsService) {
+	public static void setPostsService(PostService postsService) {
 		Service.postsService = postsService;
 	}
 }
