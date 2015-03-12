@@ -2,15 +2,22 @@ package src.org.elsys.ip.rest;
 
 import java.util.List;
 
+import src.org.elsys.ip.*;
 import src.org.elsys.ip.model.Post;
 import src.org.elsys.ip.model.User;
 import src.org.elsys.ip.service.PostService;
 
 public class PostsRest {
-	private final PostsService postsService;
+	private final PostService postsService;
 	private final User defaultAuthor;
+
+
+// In real world projects this is done by injection
+// see https://github.com/google/guice
+//	@Inject
+//	public PostsRest(PostsService postsService) {
 	public PostsRest() {
-		postsService = new PostsService();
+		postsService = Service.getPostsService();
 		
 		// TODO should be get from session
 		defaultAuthor = new User();

@@ -4,13 +4,14 @@ package test.org.elsys.ip.rest;
 +import static org.junit.Assert.assertNotNull;
 +
 +import src.org.elsys.ip.model.Post;
+import src.org.elsys.ip.rest.*;
 +import org.junit.Before;
 +import org.junit.Test;
 +
 +/**
 + * For unit testing you can use JUnit or TestNG
 + */
-+public class PostsRestTest {
++public class PostRestTest {
 +	private PostsRest postsRest;
 +
 +	@Before
